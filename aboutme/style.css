@@ -1,0 +1,119 @@
+/* reset */
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: Avenir,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+/* section define */
+.section {
+  position: relative;
+}
+.section-inner {
+  width: 1024px;
+  margin: auto;
+}
+@media screen and (max-width: 1044px) {
+  .section-inner {
+    width: 640px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .section-inner {
+    width: auto;
+    margin: 0 15px;
+  }
+}
+
+/* section hello */
+.section-hello:before,
+.section-hello:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+.section-hello:before {
+  left: 0;
+  background: #4c4c4c;
+}
+.section-hello:after {
+  left: 50%;
+  background: #76726e;
+}
+.section-hello-body {
+  height: 500px;
+  background: url('./images/banner.jpg') no-repeat center;
+  background-size: auto 100%;
+}
+.section-hello .section-inner {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100%;
+}
+.section-hello-intro {
+  width: 400px;
+  text-align: right;
+}
+.section-hello-intro h1 {
+  margin: 0 0 1.15em;
+  line-height: 1.5em;
+  font-weight: 200;
+  letter-spacing: 4px;
+  font-size: 34px;
+  color: #fff;
+}
+.section-hello-intro h1 strong{
+  margin-left: 10px;
+  padding: 0 12px 0 15px;
+  border-radius: 4px;
+  background: #fff;
+  color: #3d668f;
+}
+.section-hello-intro h2 {
+  margin: 0 0 0.5em;
+  line-height: 1.5em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 30px;
+  color: #fff;
+}
+.section-hello-intro p {
+  margin: 10px 0;
+  line-height: 16px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+.section-hello-intro p strong {
+  padding: 0 .2em;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+.section-hello-intro p s{
+  margin-right: .2em;
+  opacity: .5;
+}
+
+@media screen and (max-width: 1044px) {
+  .section-hello-body {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .section-hello-body {
+    height: 240px;
+  }
+  .section-hello-intro h1 {
+    font-size: 25px;
+  }
+  .section-hello-intro h2 {
+    font-size: 20px;
+  }
+  .section-hello-intro p {
+    font-size: 12px;
+  }
+}
