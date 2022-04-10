@@ -5,7 +5,7 @@ html,body {
   font-family: Avenir,Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-/* section define */
+/* section common start */
 .section {
   position: relative;
 }
@@ -24,8 +24,9 @@ html,body {
     margin: 0 15px;
   }
 }
+/* section common end */
 
-/* section hello */
+/* section hello start */
 .section-hello:before,
 .section-hello:after {
   content: '';
@@ -117,3 +118,48 @@ html,body {
     font-size: 12px;
   }
 }
+/* section hello end */
+
+/* section company start */
+.section-company {
+  padding: 100px 0 70px;
+  background: #e3f3ff;
+  color: #184c81;
+}
+.section-company .caption {
+  padding-top: 40px;
+  text-align: center;
+}
+.section-company .caption h2{
+  margin: 0 0 10px;
+  line-height: 1em;
+  letter-spacing: 2px;
+  font-size: 38px;
+}
+.section-company .caption p {
+  margin: 0;
+}
+.section-company .zoom-building {
+  padding: 40px 0 0;
+}
+.section-company .zoom-building img {
+  display: block;
+  margin: auto;
+  width: 300px;
+}
+.section-company .others p {
+  margin: 0;
+  line-height: 2em;
+  text-align: center;
+  font-size: 18px;
+}
+.section-company .others p:nth-child(1) {
+  letter-spacing: 2px;
+}
+.section-company .others p:nth-child(2) {
+  font-size: .88em;
+}
+.section-company .others p strong {
+  margin: 0 .2em;
+}
+/* section company end */
