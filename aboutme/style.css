@@ -198,37 +198,47 @@ html,body {
   font-size: 18px;
   color: #4d85b0;
 }
-
+/* hobby info*/
+.hobby-info {}
+.hobby-info h3 {
+  margin: 0 0 .3em;
+  font-size: 30px;
+}
+.hobby-info h3 small {
+  margin-right: 10px;
+  font-size: .65em
+}
+.hobby-info p {
+  margin: 0 0 1.5em;
+  font-size: 16px;
+}
+.hobby-info a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  text-decoration: none;
+  line-height: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  transition: .2s;
+}
+/* hobby coding */
 .hobby-coding {
-  margin-bottom: 160px;
+  margin-bottom: 240px;
 }
 .hobby-coding .hobby-info {
   margin-bottom: 40px;
   text-align: center;
 }
 .hobby-coding .hobby-info h3 {
-  margin: 0 0 .3em;
-  font-size: 28px;
   color: #453008;
 }
-.hobby-coding .hobby-info h3 small {
-  margin-right: 10px;
-}
 .hobby-coding .hobby-info p {
-  margin: 0 0 1.5em;
-  font-size: 16px;
   color: #b8a37a;
 }
 .hobby-coding .hobby-info a {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid #b8a37a;
-  text-decoration: none;
-  line-height: 1em;
-  font-size: 16px;
-  font-weight: bold;
+  border-color: #b8a37a;
   color: #5c410a;
-  transition: .2s;
 }
 .hobby-coding .hobby-info a:hover {
   background: #f5ebd6;
@@ -292,8 +302,68 @@ html,body {
     order: 1
   }
 }
-
+/* hobby writting */
 .hobby-writting {
-  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.hobby-writting .hobby-info {
+  width: 340px;
+  padding: 50px 40px 0 0
+}
+.hobby-writting .hobby-info h3 {
+  color: #0f598a;
+}
+.hobby-writting .hobby-info p {
+  color: #94b9d1;
+}
+.hobby-writting .hobby-info a {
+  border-color: #94b9d1;
+  color: #0f598a;
+}
+.hobby-writting .hobby-info a:hover {
+  background: #ecf4f9;
+}
+.hobby-writting .hobby-info a:active {
+  background: #dbe2f0;
+}
+.hobby-writting .hobby-detail {
+  width: 440px;
+}
+.hobby-writting .hobby-detail img{
+  width: 440px;
+  height: 480px;
+}
+/* hobby photograph */
+.hobby-photograph .hobby-info {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.hobby-photograph .hobby-info h3 {
+  margin: 0 0 .3em;
+  font-size: 28px;
+  color: #453008;
+}
+.hobby-photograph .hobby-info h3 small {
+  margin-right: 10px;
+}
+.hobby-photograph .hobby-info p {
+  margin: 0 0 1.5em;
+  font-size: 16px;
+  color: #b8a37a;
 }
 /* section hobby end */
+.hobby-photograph {
+  padding-bottom: 100px
+}
+.hobby-photograph .hobby-detail {
+  display: flex;
+  gap: 30px;
+}
+.photograph-group {
+  width: 370px;
+  height: 500px;
+  flex-grow: 1;
+  border: 1px solid #333;
+}
