@@ -183,7 +183,7 @@ html,body {
   text-align: center;
   font-weight: bolder;
   font-size: 38px;
-  color: #005299;
+  color: #109900;
 }
 .section-hobby-caption ul {
   margin: 0;
@@ -196,7 +196,7 @@ html,body {
   display: inline-block;
   margin: 0 .2em;
   font-size: 18px;
-  color: #4d85b0;
+  color: #57b34d;
 }
 /* hobby info*/
 .hobby-info {}
@@ -341,19 +341,14 @@ html,body {
   text-align: center;
 }
 .hobby-photograph .hobby-info h3 {
-  margin: 0 0 .3em;
-  font-size: 28px;
-  color: #453008;
+  color: #09534d;
 }
 .hobby-photograph .hobby-info h3 small {
   margin-right: 10px;
 }
 .hobby-photograph .hobby-info p {
-  margin: 0 0 1.5em;
-  font-size: 16px;
-  color: #b8a37a;
+  color: #85ad85;
 }
-/* section hobby end */
 .hobby-photograph {
   padding-bottom: 100px
 }
@@ -361,9 +356,20 @@ html,body {
   display: flex;
   gap: 30px;
 }
+.hobby-photograph .hobby-info a {
+  border-color: #85ad85;
+  color: #09534d;
+}
+.hobby-photograph .hobby-info a:hover {
+  background: #ecf4f9;
+}
+.hobby-photograph .hobby-info a:active {
+  background: #dbe2f0;
+}
 .photograph-group {
   width: 370px;
   height: 500px;
   flex-grow: 1;
   border: 1px solid #333;
 }
+/* section hobby end */
