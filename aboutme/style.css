@@ -337,7 +337,7 @@ html,body {
 }
 /* hobby photograph */
 .hobby-photograph{
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -376,6 +376,7 @@ html,body {
   width: 400px;
   height: 600px;
   background: #fff;
+  box-shadow: 1px 1px 4px 1px #fbf6d0;
 }
 .photograph-group .cover {
   position: relative;
@@ -411,5 +412,41 @@ html,body {
 }
 .photograph-group .photograph-info a:hover {
   opacity: 1;
+}
+
+.photograph-group .intro {
+  padding: 18px 15px 0;
+}
+.photograph-group .intro h4{
+  margin: 0 0 .6em;
+  line-height: 1em;
+  font-size: 16px;
+  color: #192a4d;
+}
+.photograph-group .intro p{
+  margin: .6em 0;
+  line-height: 1.2em;
+  font-size: 13px;
+  color: #8f95a3;
+}
+.photograph-group .intro a{
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 13px;
+  color: #8592ad;
+  transition: .2s;
+}
+.photograph-group .intro a:hover{
+  color: #004299;
+}
+.photograph-group .intro a.primary-link {
+  padding: .2em .5em;
+  border-radius: 4px;
+  border: 1px solid #a3adc2;
+  text-decoration: none;
+}
+.photograph-group .intro a.primary-link:active {
+  background: #dce8f9;
+  border-color: #9cabc9;
 }
 /* section hobby end */
