@@ -4,6 +4,18 @@ html,body {
   padding: 0;
   font-family: Avenir,Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 660px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 340px) {
+  html {
+    font-size: 10px;
+  }
 }
 /* section common start */
 .section {
@@ -128,46 +140,48 @@ html,body {
 
 /* section company start */
 .section-company {
-  padding: 100px 0 70px;
+  padding: 6.25rem 1rem 4.375rem;
   background: #e3f3ff;
   color: #184c81;
 }
 .section-company .caption {
-  padding-top: 40px;
+  padding-top: 2.5rem;
   text-align: center;
 }
 .section-company .caption h2{
-  margin: 0 0 10px;
-  line-height: 1em;
-  letter-spacing: 2px;
-  font-size: 38px;
+  margin: 0 0 0.625rem;
+  line-height: 1.2em;
+  font-size: 2.375rem;
 }
 .section-company .caption p {
   margin: 0;
+  font-size: 1rem;
 }
 .section-company .zoom-building {
-  padding: 40px 0 0;
+  padding: 3rem 0 0;
 }
 .section-company .zoom-building img {
   display: block;
   margin: auto;
-  width: 300px;
+  width: 80%;
+  max-width: 300px
 }
 .section-company .others p {
   margin: 0;
-  line-height: 2em;
+  line-height: 2rem;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .section-company .others p:nth-child(1) {
   letter-spacing: 2px;
 }
 .section-company .others p:nth-child(2) {
-  font-size: .88em;
+  font-size: .88rem;
 }
 .section-company .others p strong {
-  margin: 0 .2em;
+  margin: 0 .2rem;
 }
+
 /* section company end */
 
 /* section hobby start */
@@ -176,13 +190,13 @@ html,body {
   background: #fffce5;
 }
 .section-hobby-caption {
-  padding: 120px 0 100px;
+  padding: 7.5rem 0 6.25rem;
 }
 .section-hobby-caption h2 {
-  margin: 0 0 10px;
+  margin: 0 0 0.625rem;
   text-align: center;
   font-weight: bolder;
-  font-size: 38px;
+  font-size: 2.375rem;
   color: #004299;
 }
 .section-hobby-caption ul {
@@ -195,39 +209,40 @@ html,body {
 .section-hobby-caption ul li {
   display: inline-block;
   margin: 0 .2em;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #4d6eb3;
 }
 /* hobby info*/
 .hobby-info {}
 .hobby-info h3 {
   margin: 0 0 .3em;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .hobby-info h3 small {
-  margin-right: 10px;
+  margin-right: 0.625rem;
   font-size: .65em
 }
 .hobby-info p {
   margin: 0 0 1.5em;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .hobby-info a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: .5em 1em;
   border: 2px solid #333;
+  border-radius: 6px;
   text-decoration: none;
   line-height: 1em;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   transition: .2s;
 }
 /* hobby coding */
 .hobby-coding {
-  margin-bottom: 240px;
+  margin-bottom: 15rem;
 }
 .hobby-coding .hobby-info {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 .hobby-coding .hobby-info h3 {
@@ -250,11 +265,11 @@ html,body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 20px;
+  gap: 1rem;
 }
 .hobby-detail-item {
   background: #333;
-  box-shadow: 1px 1px 20px #f6f1cb, 1px 1px 2px #fbf3b6;
+  box-shadow: 1px 1px 1rem #f6f1cb, 1px 1px 2px #fbf3b6;
 }
 .hobby-detail-item img{
   display: block;
@@ -263,12 +278,12 @@ html,body {
   background: #fff;
 }
 .hobby-detail-item .intro{
-  padding: 18px 20px;
+  padding: 1.125rem 1.25rem;
 }
 .hobby-detail-item .intro h4{
   margin: 0 0 .5em;
   line-height: 1.2em;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .hobby-detail-item .intro h4 a{
   text-decoration: none;
@@ -306,11 +321,11 @@ html,body {
 .hobby-writting {
   display: flex;
   justify-content: center;
-  margin-bottom: 200px;
+  margin-bottom: 12.5rem;
 }
 .hobby-writting .hobby-info {
-  width: 340px;
-  padding: 50px 40px 0 0
+  width: 21.25rem;
+  padding: 3.125rem 2.5rem 0 0
 }
 .hobby-writting .hobby-info h3 {
   color: #004299;
@@ -329,38 +344,44 @@ html,body {
   background: #dbe2f0;
 }
 .hobby-writting .hobby-detail {
-  width: 440px;
+  width: 100%;
+  max-width: 440px;
 }
 .hobby-writting .hobby-detail img{
-  width: 440px;
-  height: 480px;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .hobby-writting {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hobby-writting .hobby-info {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
 }
 /* hobby photograph */
 .hobby-photograph{
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding-bottom: 6.25rem
 }
 .hobby-photograph .hobby-info {
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
   text-align: center;
 }
 .hobby-photograph .hobby-info h3 {
   color: #00332f;
 }
-.hobby-photograph .hobby-info h3 small {
-  margin-right: 10px;
-}
 .hobby-photograph .hobby-info p {
   color: #47857f;
-}
-.hobby-photograph {
-  padding-bottom: 100px
 }
 .hobby-photograph .hobby-detail {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .hobby-photograph .hobby-info a {
   border-color: #47857f;
@@ -368,24 +389,25 @@ html,body {
 }
 .hobby-photograph .hobby-info a:hover {
   background: #ecf4f9;
+  overflow: hidden;
 }
 .hobby-photograph .hobby-info a:active {
   background: #dbe2f0;
 }
 .photograph-group {
-  width: 400px;
-  height: 600px;
+  width: 25rem;
+  margin-bottom: 1.875rem;
   background: #fff;
   box-shadow: 1px 1px 4px 1px #fbf6d0;
 }
 .photograph-group .cover {
   position: relative;
-  width: 400px;
-  height: 475px;
+  width: 100%;
+  height: 29.6875rem;
 }
 .photograph-group img {
-  width: 400px;
-  height: 475px;
+  width: 100%;
+  height: auto;
   background: #fff;
 }
 .photograph-group .photograph-info {
@@ -395,6 +417,7 @@ html,body {
   width: 100%;
   height: 100%;
   font-size: 0;
+  overflow: hidden;
 }
 .photograph-group .photograph-info a {
   float: left;
@@ -415,24 +438,24 @@ html,body {
 }
 
 .photograph-group .intro {
-  padding: 18px 15px 0;
+  padding: 1.125rem 1rem 0.75rem;
 }
 .photograph-group .intro h4{
-  margin: 0 0 .6em;
+  margin: 0 0 .5em;
   line-height: 1em;
-  font-size: 16px;
+  font-size: 1rem;
   color: #192a4d;
 }
 .photograph-group .intro p{
-  margin: .6em 0;
-  line-height: 1.2em;
-  font-size: 13px;
+  margin: .5em 0;
+  line-height: 1.5em;
+  font-size: 0.8rem;
   color: #8f95a3;
 }
 .photograph-group .intro a{
   display: inline-block;
-  margin-right: 10px;
-  font-size: 13px;
+  margin-right: 0.7rem;
+  font-size: 0.8rem;
   color: #8592ad;
   transition: .2s;
 }
@@ -440,7 +463,7 @@ html,body {
   color: #004299;
 }
 .photograph-group .intro a.primary-link {
-  padding: .2em .5em;
+  padding: .15em .5em;
   border-radius: 4px;
   border: 1px solid #a3adc2;
   text-decoration: none;
@@ -449,4 +472,9 @@ html,body {
   background: #dce8f9;
   border-color: #9cabc9;
 }
+
+.photograph-group-more .cover {
+  height: 37.5rem;
+}
+
 /* section hobby end */
