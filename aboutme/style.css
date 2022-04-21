@@ -80,8 +80,8 @@ html,body {
   color: #fff;
 }
 .section-hello-intro h1 strong{
-  margin-left: 10px;
-  padding: 0 12px 0 15px;
+  margin-left: .5em;
+  padding: 0 .4em 0 .55em;
   border-radius: 4px;
   background: #fff;
   color: #3d668f;
@@ -140,12 +140,11 @@ html,body {
 
 /* section company start */
 .section-company {
-  padding: 6.25rem 1rem 4.375rem;
+  padding: 10rem 1rem 6rem;
   background: #e3f3ff;
   color: #184c81;
 }
 .section-company .caption {
-  padding-top: 2.5rem;
   text-align: center;
 }
 .section-company .caption h2{
@@ -163,7 +162,7 @@ html,body {
 .section-company .zoom-building img {
   display: block;
   margin: auto;
-  width: 80%;
+  width: 70%;
   max-width: 300px
 }
 .section-company .others p {
@@ -186,11 +185,12 @@ html,body {
 
 /* section hobby start */
 .section-hobby {
+  padding: 10rem 0;
   border-top: 1px solid #d1e8fa;
   background: #fffce5;
 }
 .section-hobby-caption {
-  padding: 7.5rem 0 6.25rem;
+  padding-bottom: 6rem;
 }
 .section-hobby-caption h2 {
   margin: 0 0 0.625rem;
@@ -238,9 +238,6 @@ html,body {
   transition: .2s;
 }
 /* hobby coding */
-.hobby-coding {
-  margin-bottom: 15rem;
-}
 .hobby-coding .hobby-info {
   margin-bottom: 2.5rem;
   text-align: center;
@@ -265,7 +262,7 @@ html,body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 1rem;
+  gap: 2rem;
 }
 .hobby-detail-item {
   background: #333;
@@ -321,11 +318,11 @@ html,body {
 .hobby-writting {
   display: flex;
   justify-content: center;
-  margin-bottom: 12.5rem;
+  margin: 15rem auto 13rem;
 }
 .hobby-writting .hobby-info {
-  width: 21.25rem;
-  padding: 3.125rem 2.5rem 0 0
+  width: 27rem;
+  padding-top: 3.5rem
 }
 .hobby-writting .hobby-info h3 {
   color: #004299;
@@ -344,7 +341,7 @@ html,body {
   background: #dbe2f0;
 }
 .hobby-writting .hobby-detail {
-  width: 100%;
+  width: 90%;
   max-width: 440px;
 }
 .hobby-writting .hobby-detail img{
@@ -366,10 +363,10 @@ html,body {
 .hobby-photograph{
   max-width: 1600px;
   margin: 0 auto;
-  padding-bottom: 6.25rem
 }
 .hobby-photograph .hobby-info {
-  margin-bottom: 3.75rem;
+  margin-bottom: rem;
+  padding: 0 1rem;
   text-align: center;
 }
 .hobby-photograph .hobby-info h3 {
@@ -382,6 +379,7 @@ html,body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 2rem;
 }
 .hobby-photograph .hobby-info a {
   border-color: #47857f;
@@ -389,14 +387,12 @@ html,body {
 }
 .hobby-photograph .hobby-info a:hover {
   background: #ecf4f9;
-  overflow: hidden;
 }
 .hobby-photograph .hobby-info a:active {
   background: #dbe2f0;
 }
 .photograph-group {
   width: 25rem;
-  margin-bottom: 1.875rem;
   background: #fff;
   box-shadow: 1px 1px 4px 1px #fbf6d0;
 }
@@ -478,13 +474,151 @@ html,body {
 }
 
 /* section hobby end */
+
+/* section connect start */
+.section-connect {
+  padding: 10rem 0 14rem;
+  background: #1c2027;
+}
+
+.section-connect .caption {
+  text-align: center;
+}
+.section-connect .caption h2{
+  margin: 0 0 1rem;
+  line-height: 1em;
+  font-size: 2.375rem;
+  color: #d0d6e2
+}
+.section-connect .caption p {
+  margin: 0;
+  font-size: 1rem;
+  color: #8d96a5
+}
+.section-connect .sns-links {
+  margin: 6rem 1rem 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.section-connect .sns-links a {
+  position: relative;
+  display: block;
+  width: 50px;
+  margin: 0 2.5rem 3rem;
+  color: #7a90b8;
+  text-decoration: none;
+  transition: .2s
+}
+.section-connect .sns-links a svg {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: .5rem;
+  fill: currentColor
+}
+.section-connect .sns-links a span {
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
+}
+.section-connect .wechat-layer {
+  position: absolute;
+  top: -200px;
+  left: -50px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #2b313d;
+  color: #6a7895;
+  opacity: 0;
+}
+.section-connect .wechat-layer .qrcode {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+}
+.section-connect .wechat-layer .qrcode img{
+  width: 120px;
+  height: 120px;
+}
+.section-connect .sns-links a:hover {
+  color: #fff
+}
+
+.section-connect .wechat-link:hover .wechat-layer {
+  opacity: 1;
+}
+
+.section-connect .job-referral h3{
+  margin: 0 0 1rem;
+  line-height: 1em;
+  font-size: 1.5rem;
+  color: #d0d6e2
+}
+.section-connect .job-referral p {
+  margin: 0;
+  font-size: .875rem;
+  color: #8d96a5
+}
+.section-connect .job-referral ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+.section-connect .job-referral li {
+  list-style: none;
+  display: flex;
+  margin-right: 2rem;
+  background: #8698bb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.section-connect .job-referral li h4{
+  margin: 0;
+  padding: 1rem;
+  background: #45ba49;
+  line-height: 1.2em;
+  color: #151e16;
+  font-size: 1rem;
+}
+.section-connect .job-referral li .info{
+  min-width: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.5rem 0 1rem; 
+}
+.section-connect .job-referral li .info a{
+  display: block;
+  margin-bottom: .2rem;
+  line-height: 1em;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #17191c
+}
+.section-connect .job-referral li .info a:hover {
+  color: #47acff
+}
+.section-connect .job-referral li .info small{
+  display: block;
+  line-height: 1em;
+  font-size: 0.875rem;
+  color: #454b54
+}
+/* section connect end */
+
 /* navigation */
 .navigation {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  /* background: rgb(255 255 255 / 20%); */
   z-index: 1000;
 }
 .navigation .section-inner {
@@ -496,11 +630,8 @@ html,body {
 .navigation .bread-crumb {
   display: inline-block;
   padding: .5rem 1.2rem;
-  /* background: #fff; */
   background: rgba(255, 255, 255, .1);
   border-radius: 8px;
-  /* border: 1px solid #fff; */
-  /* box-shadow: 0px 4px 8px rgba(0, 8, 36, 0.05); */
   color: #333;
   text-decoration: none;
   font-size: 1rem
