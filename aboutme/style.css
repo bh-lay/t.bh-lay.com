@@ -478,3 +478,63 @@ html,body {
 }
 
 /* section hobby end */
+/* navigation */
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background: rgb(255 255 255 / 20%); */
+  z-index: 1000;
+}
+.navigation .section-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.navigation .bread-crumb {
+  display: inline-block;
+  padding: .5rem 1.2rem;
+  /* background: #fff; */
+  background: rgba(255, 255, 255, .1);
+  border-radius: 8px;
+  /* border: 1px solid #fff; */
+  /* box-shadow: 0px 4px 8px rgba(0, 8, 36, 0.05); */
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem
+}
+.navigation .bread-crumb a {
+  text-decoration: none;
+  color: #ccc
+}
+.navigation .bread-crumb a:hover {
+  text-decoration: underline;
+  color: #fff
+}
+.navigation .bread-crumb i {
+  margin: 0 10px;
+  font-style: normal;
+  color: #8f96a3
+}
+.navigation .bread-crumb strong {
+  color: #fff
+}
+.navigation .link-list a {
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #e9e6e2;
+}
+
+.navigation .link-list a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+@media screen and (max-width: 660px) {
+  .navigation .link-list {
+    display: none;
+  }
+}
